@@ -305,7 +305,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 50%, var(--color-primary-light) 100%);
+    background: url('../assets/images/daniel-portrait-1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
