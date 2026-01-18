@@ -1,0 +1,1400 @@
+/* ===================================
+   Daniel Ketchum - Inner Pages Styles
+   =================================== */
+
+/* Page Header */
+.page-header {
+    position: relative;
+    height: 50vh;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 50%, var(--color-primary-light) 100%);
+    margin-top: 0;
+}
+
+.page-header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(26, 58, 92, 0.8) 0%,
+        rgba(44, 74, 110, 0.7) 100%
+    );
+}
+
+.page-header-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: var(--spacing-md);
+}
+
+.page-header-content h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    color: var(--color-white);
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.page-header-content p {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--color-secondary-light);
+}
+
+/* ===================================
+   Bio Page
+   =================================== */
+.bio-section {
+    background-color: var(--color-white);
+}
+
+.bio-layout {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.bio-photo-column {
+    position: sticky;
+    top: 100px;
+}
+
+.bio-photo {
+    margin-bottom: 2rem;
+}
+
+.photo-placeholder {
+    aspect-ratio: 3/4;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.5);
+    box-shadow: var(--shadow-lg);
+}
+
+.photo-placeholder i {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.photo-placeholder span {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+}
+
+.bio-quick-facts {
+    background-color: var(--color-ivory);
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+}
+
+.bio-quick-facts h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary-dark);
+}
+
+.bio-quick-facts ul {
+    list-style: none;
+}
+
+.bio-quick-facts li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.bio-quick-facts li:last-child {
+    border-bottom: none;
+}
+
+.bio-quick-facts i {
+    color: var(--color-secondary);
+    width: 20px;
+    text-align: center;
+}
+
+.bio-content {
+    max-width: 700px;
+}
+
+.bio-lead {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: var(--color-primary-dark);
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.bio-content h2 {
+    font-size: 1.75rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary-dark);
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.bio-content h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--color-secondary);
+}
+
+.bio-content p {
+    margin-bottom: 1.25rem;
+    color: var(--color-text);
+}
+
+.bio-content strong {
+    color: var(--color-primary-dark);
+}
+
+.bio-closing {
+    font-style: italic;
+    color: var(--color-primary);
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--color-ivory);
+}
+
+/* Timeline */
+.timeline-section {
+    background-color: var(--color-ivory);
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 50px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--color-primary-light);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -38px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--color-secondary);
+    border: 3px solid var(--color-white);
+    border-radius: 50%;
+    box-shadow: var(--shadow-sm);
+}
+
+.timeline-content {
+    background-color: var(--color-white);
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.timeline-date {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+    color: var(--color-text-light);
+    margin-bottom: 0;
+}
+
+/* ===================================
+   Music Page
+   =================================== */
+.music-section {
+    background-color: var(--color-white);
+}
+
+.music-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto var(--spacing-lg);
+}
+
+.albums-section,
+.singles-section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.albums-section h2,
+.singles-section h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.album-card {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    background-color: var(--color-ivory);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-md);
+}
+
+.album-cover {
+    aspect-ratio: 1;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.album-cover i {
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.album-info {
+    padding: 2rem 2rem 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.album-info h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.album-year {
+    color: var(--color-secondary);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.album-description {
+    color: var(--color-text-light);
+    margin-bottom: 1.5rem;
+}
+
+.album-tracks {
+    margin-bottom: 1.5rem;
+}
+
+.album-tracks h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+}
+
+.album-tracks ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.album-tracks li {
+    background-color: var(--color-white);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+}
+
+.streaming-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.streaming-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-white);
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    color: var(--color-text);
+    transition: all var(--transition-fast);
+}
+
+.streaming-link:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+}
+
+.streaming-link i {
+    font-size: 1rem;
+}
+
+/* Singles Grid */
+.singles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.single-card {
+    background-color: var(--color-ivory);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+}
+
+.single-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.single-cover {
+    aspect-ratio: 1;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.single-cover i {
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.single-info {
+    padding: 1.25rem;
+}
+
+.single-info h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+}
+
+.single-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.single-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    color: var(--color-primary);
+    transition: all var(--transition-fast);
+}
+
+.single-link:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+}
+
+/* ===================================
+   Sheet Music Page
+   =================================== */
+.sheet-music-section {
+    background-color: var(--color-white);
+}
+
+.sheet-music-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto var(--spacing-lg);
+}
+
+.sheet-music-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.sheet-music-card {
+    background-color: var(--color-ivory);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-normal);
+}
+
+.sheet-music-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.sheet-preview {
+    aspect-ratio: 4/3;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.sheet-preview-placeholder {
+    text-align: center;
+    color: var(--color-text-muted);
+}
+
+.sheet-preview-placeholder i {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.sheet-preview-placeholder span {
+    font-size: 0.875rem;
+}
+
+.sheet-info {
+    padding: 1.5rem;
+}
+
+.sheet-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.sheet-composer {
+    color: var(--color-text-light);
+    font-size: 0.9375rem;
+    margin-bottom: 1rem;
+}
+
+.sheet-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sheet-detail {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+}
+
+.sheet-detail i {
+    color: var(--color-secondary);
+}
+
+.sheet-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin-bottom: 1rem;
+}
+
+.sheet-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.sheet-actions .btn {
+    flex: 1;
+    text-align: center;
+}
+
+/* ===================================
+   Contact Page
+   =================================== */
+.contact-section {
+    background-color: var(--color-white);
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info > p {
+    color: var(--color-text-light);
+    margin-bottom: 2rem;
+}
+
+.contact-methods {
+    margin-bottom: 2rem;
+}
+
+.contact-method {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-method-icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-ivory);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-secondary);
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.contact-method-info h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0.25rem;
+}
+
+.contact-method-info p {
+    color: var(--color-text-light);
+    margin-bottom: 0;
+}
+
+.contact-method-info a {
+    color: var(--color-primary);
+}
+
+.contact-social h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.contact-social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-ivory);
+    border-radius: 50%;
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    transition: all var(--transition-normal);
+}
+
+.contact-social-link:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    transform: translateY(-3px);
+}
+
+/* Contact Form */
+.contact-form-wrapper {
+    background-color: var(--color-ivory);
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.contact-form-wrapper h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 2px solid var(--color-primary-light);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: border-color var(--transition-fast);
+    background-color: var(--color-white);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-secondary);
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-form .btn {
+    width: 100%;
+}
+
+/* ===================================
+   Privacy Page
+   =================================== */
+.privacy-section {
+    background-color: var(--color-white);
+}
+
+.privacy-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.privacy-content h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary-dark);
+}
+
+.privacy-content p,
+.privacy-content ul {
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+.privacy-content ul {
+    padding-left: 1.5rem;
+}
+
+.privacy-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* ===================================
+   Responsive Styles
+   =================================== */
+@media (max-width: 992px) {
+    .bio-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .bio-photo-column {
+        position: static;
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+
+    .album-card {
+        grid-template-columns: 250px 1fr;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        height: 40vh;
+        min-height: 280px;
+    }
+
+    .bio-photo-column {
+        grid-template-columns: 1fr;
+    }
+
+    .bio-photo {
+        max-width: 300px;
+        margin: 0 auto 2rem;
+    }
+
+    .album-card {
+        grid-template-columns: 1fr;
+    }
+
+    .album-cover {
+        max-height: 300px;
+    }
+
+    .album-info {
+        padding: 1.5rem;
+    }
+
+    .timeline {
+        padding-left: 40px;
+    }
+
+    .timeline::before {
+        left: 15px;
+    }
+
+    .timeline-marker {
+        left: -33px;
+    }
+
+    .sheet-music-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form-wrapper {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .singles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sheet-actions {
+        flex-direction: column;
+    }
+}
+
+/* ================================
+   MUSIC PAGE STYLES
+   ================================ */
+
+.music-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    font-size: 1.125rem;
+    color: var(--color-text-light);
+}
+
+.albums-section,
+.singles-section {
+    margin-bottom: 4rem;
+}
+
+/* Album Cards */
+.album-card {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 2rem;
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 2rem;
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.album-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.album-cover {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
+}
+
+.album-cover i {
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.album-info {
+    padding: 2rem;
+}
+
+.album-info h3 {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    color: var(--color-primary-dark);
+    margin-bottom: 0.25rem;
+}
+
+.album-year {
+    color: var(--color-secondary);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.album-description {
+    color: var(--color-text-light);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.album-tracks {
+    margin-bottom: 1.5rem;
+}
+
+.album-tracks h4 {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+}
+
+.album-tracks ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.album-tracks li {
+    padding: 0.25rem 0;
+    color: var(--color-text-light);
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.album-tracks li::before {
+    content: "♪";
+    position: absolute;
+    left: 0;
+    color: var(--color-secondary);
+}
+
+.streaming-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.streaming-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--color-ivory);
+    border-radius: var(--radius-full);
+    color: var(--color-text);
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+}
+
+.streaming-link:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.streaming-link i {
+    font-size: 1rem;
+}
+
+/* Singles Grid */
+.singles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.single-card {
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+}
+
+.single-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.single-cover {
+    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-dark) 100%);
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-cover i {
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.single-info {
+    padding: 1.25rem;
+}
+
+.single-info h3 {
+    font-family: var(--font-heading);
+    font-size: 1.125rem;
+    color: var(--color-primary-dark);
+    margin-bottom: 0.75rem;
+}
+
+.single-links {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.single-link {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-ivory);
+    border-radius: 50%;
+    color: var(--color-text);
+    transition: all var(--transition-fast);
+}
+
+.single-link:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* Streaming Section */
+.streaming-section {
+    background: var(--color-ivory);
+}
+
+.streaming-platforms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.platform-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.5rem 2rem;
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    color: var(--color-text);
+    text-decoration: none;
+    transition: all var(--transition-normal);
+    min-width: 120px;
+}
+
+.platform-link:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    color: var(--color-primary);
+}
+
+.platform-link i {
+    font-size: 2rem;
+}
+
+.platform-link span {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+/* ================================
+   SHEET MUSIC PAGE STYLES
+   ================================ */
+
+.sheet-music-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    font-size: 1.125rem;
+    color: var(--color-text-light);
+}
+
+.sheet-music-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.sheet-music-card {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-normal);
+}
+
+.sheet-music-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.sheet-preview {
+    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sheet-preview-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: #999;
+}
+
+.sheet-preview-placeholder i {
+    font-size: 3rem;
+}
+
+.sheet-preview-placeholder span {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.sheet-info {
+    padding: 1.5rem;
+}
+
+.sheet-info h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-primary-dark);
+    margin-bottom: 0.25rem;
+}
+
+.sheet-composer {
+    color: var(--color-text-light);
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.sheet-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sheet-detail {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8125rem;
+    color: var(--color-text-light);
+    background: var(--color-ivory);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-full);
+}
+
+.sheet-detail i {
+    color: var(--color-secondary);
+}
+
+.sheet-description {
+    color: var(--color-text-light);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-size: 0.9375rem;
+}
+
+.sheet-price {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    color: var(--color-secondary);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.sheet-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.sheet-actions .btn {
+    flex: 1;
+    justify-content: center;
+}
+
+/* ================================
+   CONTACT PAGE STYLES
+   ================================ */
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.contact-info h2,
+.contact-form-wrapper h2 {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    color: var(--color-primary-dark);
+    margin-bottom: 1rem;
+}
+
+.contact-info > p {
+    color: var(--color-text-light);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.contact-methods {
+    margin-bottom: 2rem;
+}
+
+.contact-method {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-method-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-method-icon i {
+    color: var(--color-white);
+    font-size: 1.25rem;
+}
+
+.contact-method-info h3 {
+    font-size: 1rem;
+    color: var(--color-primary-dark);
+    margin-bottom: 0.25rem;
+}
+
+.contact-method-info p {
+    color: var(--color-text-light);
+    margin: 0;
+}
+
+.contact-method-info a {
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+
+.contact-method-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-social h3 {
+    font-size: 1rem;
+    color: var(--color-primary-dark);
+    margin-bottom: 1rem;
+}
+
+.contact-social-links {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.contact-social-link {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-ivory);
+    border-radius: 50%;
+    color: var(--color-text);
+    font-size: 1.25rem;
+    transition: all var(--transition-fast);
+}
+
+.contact-social-link:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* Contact Form */
+.contact-form-wrapper {
+    background: var(--color-white);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 2px solid var(--color-ivory);
+    border-radius: var(--radius-md);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: border-color var(--transition-fast);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-form .btn {
+    width: 100%;
+    justify-content: center;
+}
+
+/* ================================
+   PRIVACY PAGE STYLES
+   ================================ */
+
+.privacy-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--color-white);
+    padding: 3rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.privacy-content h2 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-primary-dark);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.privacy-content p {
+    color: var(--color-text-light);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.privacy-content ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+.privacy-content li {
+    color: var(--color-text-light);
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+}
+
+.privacy-content a {
+    color: var(--color-secondary);
+}
+
+/* ================================
+   RESPONSIVE STYLES
+   ================================ */
+
+@media (max-width: 992px) {
+    .album-card {
+        grid-template-columns: 1fr;
+    }
+
+    .album-cover {
+        min-height: 200px;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .sheet-music-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .singles-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+
+    .streaming-platforms {
+        gap: 1rem;
+    }
+
+    .platform-link {
+        padding: 1rem 1.5rem;
+        min-width: 100px;
+    }
+
+    .privacy-content {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sheet-actions {
+        flex-direction: column;
+    }
+
+    .streaming-links {
+        justify-content: center;
+    }
+}

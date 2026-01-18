@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Daniel Ketchum for collaborations, bookings, inquiries, or to connect about his piano music.">
+    <meta name="keywords" content="Contact Daniel Ketchum, pianist contact, music collaboration">
+    <title>Contact | Daniel Ketchum - Pianist & Composer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">Daniel Ketchum</span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="bio.html" class="nav-link">Bio</a></li>
+                <li class="nav-item"><a href="music.html" class="nav-link">Music</a></li>
+                <li class="nav-item"><a href="sheet-music.html" class="nav-link">Sheet Music</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1>Contact</h1>
+            <p>Let's connect</p>
+        </div>
+    </header>
+
+    <!-- Contact Content -->
+    <section class="section contact-section">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Whether you're interested in collaborations, bookings, licensing, or just want to share how the music has touched you, I'd love to hear from you.</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-method-info">
+                                <h3>Email</h3>
+                                <p><a href="mailto:Ketchummusic@hotmail.com">Ketchummusic@hotmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-method-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="contact-method-info">
+                                <h3>Website</h3>
+                                <p><a href="https://ketchummusic.com">ketchummusic.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-method-icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <div class="contact-method-info">
+                                <h3>For</h3>
+                                <p>Collaborations, Bookings, Inquiries</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h3>Connect on Social Media</h3>
+                        <div class="contact-social-links">
+                            <a href="https://www.facebook.com/poemsofnotes" target="_blank" rel="noopener" class="contact-social-link" title="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com/MosaicCrypto" target="_blank" rel="noopener" class="contact-social-link" title="X (Twitter)">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@danielketchum" target="_blank" rel="noopener" class="contact-social-link" title="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://open.spotify.com/artist/daniel-ketchum" target="_blank" rel="noopener" class="contact-social-link" title="Spotify">
+                                <i class="fab fa-spotify"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Send a Message</h2>
+                    <form class="contact-form" id="contact-form" action="https://formspree.io/f/placeholder" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Collaboration Inquiry">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" required placeholder="Tell me about your project or inquiry..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background-color: var(--color-ivory);">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div style="max-width: 800px; margin: 2rem auto 0;">
+                <div style="background: var(--color-white); padding: 1.5rem; border-radius: var(--radius-md); margin-bottom: 1rem; box-shadow: var(--shadow-sm);">
+                    <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem; color: var(--color-primary-dark);">Can I license your music for my project?</h3>
+                    <p style="color: var(--color-text-light); margin: 0;">Yes! I'm open to licensing discussions for films, videos, podcasts, and other creative projects. Please reach out with details about your project.</p>
+                </div>
+
+                <div style="background: var(--color-white); padding: 1.5rem; border-radius: var(--radius-md); margin-bottom: 1rem; box-shadow: var(--shadow-sm);">
+                    <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem; color: var(--color-primary-dark);">Do you offer private piano lessons?</h3>
+                    <p style="color: var(--color-text-light); margin: 0;">Currently, I focus on composition and recording, but feel free to inquire about potential teaching opportunities.</p>
+                </div>
+
+                <div style="background: var(--color-white); padding: 1.5rem; border-radius: var(--radius-md); margin-bottom: 1rem; box-shadow: var(--shadow-sm);">
+                    <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem; color: var(--color-primary-dark);">How can I stay updated on new releases?</h3>
+                    <p style="color: var(--color-text-light); margin: 0;">Follow me on social media or subscribe to the newsletter on the homepage to receive updates about new music and sheet music releases.</p>
+                </div>
+
+                <div style="background: var(--color-white); padding: 1.5rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                    <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem; color: var(--color-primary-dark);">Are you available for live performances?</h3>
+                    <p style="color: var(--color-text-light); margin: 0;">I occasionally perform at select venues and events. Contact me with details about your event for availability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Daniel Ketchum</h3>
+                    <p>Pianist & Composer</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="bio.html">Bio</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="sheet-music.html">Sheet Music</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/poemsofnotes" target="_blank" rel="noopener" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/MosaicCrypto" target="_blank" rel="noopener" title="X (Twitter)">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@danielketchum" target="_blank" rel="noopener" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Daniel Ketchum. All rights reserved.</p>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Contact form handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value || 'Website Inquiry';
+            const message = document.getElementById('message').value;
+
+            // Create mailto link
+            const mailtoLink = `mailto:Ketchummusic@hotmail.com?subject=${encodeURIComponent(subject + ' - from ' + name)}&body=${encodeURIComponent(message + '\n\nFrom: ' + name + '\nEmail: ' + email)}`;
+
+            window.location.href = mailtoLink;
+
+            alert('Thank you for your message! Your email client will open to send the message.');
+        });
+    </script>
+</body>
+</html>
