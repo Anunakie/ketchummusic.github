@@ -841,3 +841,20 @@ img {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* About Section Responsive */
+@media (max-width: 768px) {
+    .about-section > .container > div {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+
+    .about-section .section-title {
+        text-align: center !important;
+    }
+
+    .about-section .about-content {
+        text-align: center;
+    }
+}
