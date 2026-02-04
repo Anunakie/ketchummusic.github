@@ -370,7 +370,7 @@
 /* Singles Grid */
 .singles-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 1.5rem;
 }
 
@@ -934,7 +934,7 @@
 /* Singles Grid */
 .singles-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 1.5rem;
 }
 
@@ -1372,7 +1372,7 @@
 
 @media (max-width: 768px) {
     .singles-grid {
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     }
 
     .streaming-platforms {
@@ -1430,5 +1430,26 @@
         width: 200px;
         height: 200px;
         margin: 0 auto 1.5rem;
+    }
+}
+
+
+/* Make singles 50% smaller */
+.singles-section .singles-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 1rem;
+}
+
+.singles-section .single-card {
+    max-width: 160px;
+}
+
+@media (max-width: 768px) {
+    .singles-section .singles-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .singles-section .single-card {
+        max-width: 140px;
     }
 }
