@@ -38,14 +38,18 @@
     font-size: clamp(2.5rem, 6vw, 4rem);
     color: var(--color-white);
     margin-bottom: 0.5rem;
-    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.35);
+    letter-spacing: -0.01em;
+    font-weight: 700;
 }
 
 .page-header-content p {
     font-family: var(--font-heading);
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-style: italic;
     color: var(--color-secondary-light);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
 }
 
 /* ===================================
@@ -133,10 +137,11 @@
 
 .bio-lead {
     font-size: 1.25rem;
-    line-height: 1.8;
+    line-height: 1.85;
     color: var(--color-primary-dark);
     margin-bottom: 1.5rem;
     font-weight: 400;
+    letter-spacing: 0.005em;
 }
 
 .bio-content h2 {
@@ -153,9 +158,10 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 50px;
+    width: 60px;
     height: 3px;
-    background-color: var(--color-secondary);
+    background: linear-gradient(90deg, var(--color-secondary), var(--color-secondary-light));
+    border-radius: 2px;
 }
 
 .bio-content p {
@@ -228,10 +234,12 @@
 
 .timeline-date {
     display: inline-block;
-    font-size: 0.875rem;
-    font-weight: 600;
+    font-size: 0.8125rem;
+    font-weight: 700;
     color: var(--color-secondary);
     margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
 }
 
 .timeline-content h3 {
@@ -810,6 +818,8 @@
     margin: 0 auto 3rem;
     font-size: 1.125rem;
     color: var(--color-text-light);
+    line-height: 1.8;
+    font-weight: 300;
 }
 
 .albums-section,
@@ -861,8 +871,11 @@
 
 .album-year {
     color: var(--color-secondary);
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.875rem;
 }
 
 .album-description {
@@ -876,11 +889,12 @@
 }
 
 .album-tracks h4 {
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     color: var(--color-text);
     margin-bottom: 0.5rem;
+    font-weight: 600;
 }
 
 .album-tracks ul {
@@ -1127,8 +1141,9 @@
     font-size: 0.8125rem;
     color: var(--color-text-light);
     background: var(--color-ivory);
-    padding: 0.25rem 0.75rem;
-    border-radius: var(--radius-full);
+    padding: 0.3rem 0.85rem;
+    border-radius: 20px;
+    font-weight: 500;
 }
 
 .sheet-detail i {
@@ -1145,9 +1160,10 @@
 .sheet-price {
     font-family: var(--font-heading);
     font-size: 1.75rem;
-    color: var(--color-secondary);
-    font-weight: 600;
+    color: var(--color-secondary-dark);
+    font-weight: 700;
     margin-bottom: 1rem;
+    letter-spacing: -0.01em;
 }
 
 .sheet-actions {
@@ -1231,9 +1247,12 @@
 }
 
 .contact-social h3 {
-    font-size: 1rem;
+    font-size: 0.9375rem;
     color: var(--color-primary-dark);
     margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 600;
 }
 
 .contact-social-links {
@@ -1324,6 +1343,8 @@
     color: var(--color-primary-dark);
     margin-top: 2rem;
     margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-secondary-light);
 }
 
 .privacy-content p {
