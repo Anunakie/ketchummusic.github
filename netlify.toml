@@ -16,3 +16,4 @@
   for = "/assets/sheet-music/*"
   [headers.values]
     X-Robots-Tag = "noindex"
+# Trigger rebuild with corrected env vars
