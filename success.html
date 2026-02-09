@@ -304,8 +304,26 @@
                     loadingState.style.display = "none";
                     successState.style.display = "block";
                     productName.textContent = data.product_name;
-                    downloadBtn.href = data.download_url;
-                    downloadBtn.setAttribute("download", "");
+
+                    // Force download instead of opening in browser
+                    downloadBtn.addEventListener("click", async function(e) {
+                        e.preventDefault();
+                        try {
+                            const pdfResp = await fetch(data.download_url);
+                            const blob = await pdfResp.blob();
+                            const url = window.URL.createObjectURL(blob);
+                            const a = document.createElement("a");
+                            a.href = url;
+                            a.download = data.download_url.split("/").pop();
+                            document.body.appendChild(a);
+                            a.click();
+                            window.URL.revokeObjectURL(url);
+                            a.remove();
+                        } catch (err) {
+                            // Fallback: open in new tab
+                            window.open(data.download_url, "_blank");
+                        }
+                    });
                 } else {
                     // Payment not verified
                     loadingState.style.display = "none";
