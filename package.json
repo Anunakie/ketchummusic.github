@@ -1,0 +1,9 @@
+{
+  "name": "ketchummusic",
+  "version": "1.0.0",
+  "description": "Daniel Ketchum Music Website with Stripe Payment Integration",
+  "private": true,
+  "dependencies": {
+    "stripe": "^14.0.0"
+  }
+}
