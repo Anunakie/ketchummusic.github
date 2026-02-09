@@ -20,6 +20,14 @@ exports.handler = async (event) => {
       };
     }
 
+    // Debug: check if Stripe key is loaded
+    if (!process.env.STRIPE_SECRET_KEY) {
+      return {
+        statusCode: 500,
+        body: JSON.stringify({ error: "STRIPE_SECRET_KEY not configured" }),
+      };
+    }
+
     // Determine the site origin for redirect URLs
     const origin = event.headers.origin || event.headers.referer || "https://ketchum-music.com";
 
@@ -35,7 +43,7 @@ exports.handler = async (event) => {
               name: `Sheet Music: ${name}`,
               description: `Digital PDF sheet music for "${name}" by Daniel Ketchum`,
             },
-            unit_amount: price, // price in cents
+            unit_amount: price,
           },
           quantity: 1,
         },
@@ -56,10 +64,14 @@ exports.handler = async (event) => {
       body: JSON.stringify({ url: session.url }),
     };
   } catch (error) {
-    console.error("Stripe checkout error:", error.message);
+    console.error("Stripe checkout error:", error);
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: "Failed to create checkout session" }),
+      body: JSON.stringify({ 
+        error: "Failed to create checkout session",
+        detail: error.message,
+        type: error.type || "unknown"
+      }),
     };
   }
 };
